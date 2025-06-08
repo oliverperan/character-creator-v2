@@ -1,6 +1,10 @@
+
+  
+
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+
 }
 
 .maxWidthWrapper {
@@ -8,6 +12,7 @@
 
 .header {
   padding-bottom: 64px;
+  width:65%;
 }
 
 .title {
@@ -24,7 +29,46 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: 125px;
+  right:20px;
+  max-height: 300px;
+  width: 45%;
+  height: auto;
 }
 
 .controlColumn {
+  width:50%;    
+
 }
+
+@media screen and (max-width: 768px) {
+  .characterWrapper {
+    position: fixed;
+    top: 24px;
+    height: 90vh;        
+    max-height: 80vh;    
+    z-index: -1;
+  
+  }
+
+  .controlColumn {
+    width: 80%;
+    
+    overflow: auto;
+    position: fixed;
+    bottom: 20%;
+    max-height: 200px;
+    white-space: nowrap;    
+  }
+
+  .header {
+    display: none;
+  }
+
+
+  
+}
+
+
+

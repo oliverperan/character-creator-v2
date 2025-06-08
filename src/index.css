@@ -24,3 +24,23 @@ body {
   padding: 0;
   border: 0;
 }
+
+.perspective {
+  position: fixed;
+  height: 40%;
+  bottom: 0;
+  background-color: lightgray;
+  width: 100%;
+  z-index: -1;  
+}
+
+@media screen and (max-width: 768px) {
+  .perspective {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+  
+}

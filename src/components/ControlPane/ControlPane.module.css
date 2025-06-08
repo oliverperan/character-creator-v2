@@ -9,8 +9,11 @@
     a little gross, but we haven't seen the tools
     to deal with it yet!
   */
+  white-space: nowrap;
+  overflow: auto;
   margin-bottom: 32px;
 }
+
 
 .title {
   margin: 0;
@@ -23,4 +26,15 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+@media screen and (max-width: 768px) {
+  .controlPane {
+   display: inline-block;
+    z-index: 1000; /* Ensure it appears above other content */
+    margin-right: 20px;
+  }
+
+  
+  
 }

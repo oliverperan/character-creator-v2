@@ -39,7 +39,7 @@ function App() {
           </p>
         </header>
         <div className={styles.controlColumn}>
-          <ControlPane
+          <ControlPane className={styles.controlPane}
             title="Bodies"
             options={bodyOptions}
             currentOption={body}
